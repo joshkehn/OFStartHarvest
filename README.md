@@ -66,7 +66,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [open scripts folder]: http://f.cl.ly/items/1H2j2v0m2H082O042B0m/Screen%20Shot%202015-05-02%20at%2012.02.08%20PM.png
 [accessibility]: http://f.cl.ly/items/0g2C403B1E3F2Z2A3r44/Screen%20Shot%202015-05-02%20at%2012.08.52%20PM.png
 [video preview]: http://f.cl.ly/items/2L0n2s41090m0e3t021J/Screen%20Shot%202015-05-02%20at%2012.25.25%20PM.png
-[video]: http://l.kehn.io/0G0z01040T2U
+[video]: http://l.kehn.io/3C1q2f2y1l23
 [of2]: https://www.omnigroup.com/omnifocus
 [of icon]: http://f.cl.ly/items/2u420w2M1i323t0e0y29/OmniFocus-for-Mac-128.png
 [mit]: http://opensource.org/licenses/MIT
