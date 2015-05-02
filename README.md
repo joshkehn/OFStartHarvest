@@ -18,6 +18,8 @@ This script can be executed two ways. First is via Script Editor. This is useful
 
 ## Setup
 
+You can either download the source or a compiled binary from the [latest release][releases/latest]. You will be able to edit the binary with Script Editor.
+
 1. Open OmniFocus.
 2. Open the Scripts Folder from the Help menu.
 ![Open Scripts Folder][open scripts folder]
@@ -71,3 +73,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 [harvest]: http://www.getharvest.com/
 [harvest referral]: http://try.hrv.st/8-96604
 [harvest icon]: http://f.cl.ly/items/1V3i0A3s0P2B3c252n1j/harvest-logo-icon-128px-6fc2a505f413234ce34001ced2f7b4f9.png
+[releases/latest]: https://github.com/joshkehn/OFStartHarvest/releases/latest
