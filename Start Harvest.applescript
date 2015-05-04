@@ -35,14 +35,13 @@ on figureTask(taskItem, taskContext, taskProject, harvestProject)
 	return harvestTask
 end figureTask
 
-on figureProject(taskItem, taskNote, taskProject, projectFolder)
+on figureProject(taskItem, taskNote, taskProject, projectNote, projectFolder)
 	set harvestProject to my DEFAULT_HARVEST_PROJECT
 
 	set taskName to get name of taskItem
 	-- Bug in OF, can't fetch note in handler. Issue #1364404
 	-- set taskNote to get note of taskItem
 	set projectName to ""
-	set projectNote to ""
 	set folderName to ""
 
 	if taskProject is not missing value then
@@ -55,7 +54,7 @@ on figureProject(taskItem, taskNote, taskProject, projectFolder)
 
 	-- Conditionally set the project here. Sometimes this is an identifier
 	-- residing in a name or note of either the task or project.
-	set projectConditions to {offset of "Project" in projectName, offset of "Project" in taskNote, offset of "Project" in taskName, offset of "Project" in taskNote}
+	set projectConditions to {offset of "Project" in projectName, offset of "Project" in projectNote, offset of "Project" in taskName, offset of "Project" in taskNote}
 	set projectFound to projectConditions as text
 	if projectFound is not "0000" then
 		set harvestProject to "Project"
@@ -113,7 +112,7 @@ tell front window of application "OmniFocus"
 	-- be prefilled. Start with the default project/task and setting the note
 	-- correctly. From there this note can be customized via a dialog and that
 	-- is convinently copied to the clipboard.
-	set harvestProject to my figureProject(taskItem, (get note of taskItem), taskProject, (get folder of taskProject))
+	set harvestProject to my figureProject(taskItem, taskNote, taskProject, taskProjectNote, (get folder of taskProject))
 	set harvestTask to my figureTask(taskItem, (get context of taskItem), taskProject, harvestProject)
 	set harvestNote to taskID & taskName & ";"
 	display dialog "Project: " & harvestProject & "
